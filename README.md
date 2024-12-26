@@ -6,7 +6,7 @@
 ![London](assets/London-sample.png)
 *London Clock Style*
 
-![Paris](assets/Paris.png)
+![Paris](assets/Paris-sample.png)
 *Paris Clock Style*
 
 
