@@ -1,12 +1,12 @@
 # Global Clock
 
-![Berlin](Assets/Berlin-sample.png)
+![Berlin](clock/Assets/Berlin-sample.png)
 *Berlin Clock Style*
 
-![London](Assets/London-sample.png)
+![London](clock/Assets/London-sample.png)
 *London Clock Style*
 
-![Paris](Assets/Paris-sample.png)
+![Paris](clock/Assets/Paris-sample.png)
 *Paris Clock Style*
 
 
