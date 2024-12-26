@@ -1,12 +1,12 @@
 # Global Clock
 
-![Berlin](assets/Berlin-sample.png)
+![Berlin](Assets/Berlin-sample.png)
 *Berlin Clock Style*
 
-![London](assets/London-sample.png)
+![London](Assets/London-sample.png)
 *London Clock Style*
 
-![Paris](assets/Paris-sample.png)
+![Paris](Assets/Paris-sample.png)
 *Paris Clock Style*
 
 
@@ -48,6 +48,16 @@ To get started with the project, clone this repository and install the necessary
 
 ```bash
 git clone https://github.com/CipherChaos/Global-Clock.git
+```
+Make sure you are in the project directory
+```bash
 cd Global-Clock
+```
+Install the required dependencies (libraries) using the following command
+``` bash
 pip install -r requirements.txt
+```
+Run the project 
+``` bash
 python main.py
+```
