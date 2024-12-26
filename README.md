@@ -1,17 +1,5 @@
 # Global Clock
 
-![Berlin](clock/Assets/Berlin-sample.png)
-*Berlin Clock Style*
-
-![London](clock/Assets/London-sample.png)
-*London Clock Style*
-
-![Paris](clock/Assets/Paris-sample.png)
-*Paris Clock Style*
-
-
-# Global Clock
-
 A powerful global clock application that allows users to view the current time in multiple time zones around the world. It supports both digital and analog clock styles, with sound effects for a more immersive experience. Built using Python and Tkinter for a user-friendly graphical interface.
 
 ## Features
@@ -21,6 +9,15 @@ A powerful global clock application that allows users to view the current time i
 - **Customizable Styles:** Easily switch between different clock styles and settings.
 - **Real-Time Updates:** Time is updated continuously for all selected time zones.
 - **Lightweight UI:** Simple and responsive user interface that adapts to any screen size.
+
+![Berlin](clock/Assets/Berlin-sample.png)
+*Berlin Clock Style*
+
+![London](clock/Assets/London-sample.png)
+*London Clock Style*
+
+![Paris](clock/Assets/Paris-sample.png)
+*Paris Clock Style*
 
 ## Supported Cities
 The clock supports the following cities from around the world:
