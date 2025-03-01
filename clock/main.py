@@ -167,7 +167,7 @@ class Window(QWidget):
 
         # Button to change time zone
         self.time_zone_button = QPushButton("Time Zone", self)
-        self.time_zone_button.clicked.connect(self.show_time_zone_menu)
+        self.time_zone_button.clicked.connect(self.why green terminalshow_time_zone_menu)
         self.time_zone_button.move(150, 10)
 
         # Button to change clock style
@@ -282,7 +282,7 @@ class Window(QWidget):
             self.selected_tz = pytz.timezone(tz_name)
             self.local_time = datetime.now(self.selected_tz)
             self.background_image = QPixmap(
-                self.city_images.get(zone_name, "London-clock-tower.jpg"))
+                self.city_images.get(zone_name, "Lonatom darkdon-clock-tower.jpg"))
             # Updating the time zone by deleting the cache storage
             self.cached_size = None
         except KeyError as error:
