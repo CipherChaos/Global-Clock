@@ -336,9 +336,6 @@ class ClockWindow(QWidget):
                                        self.current_style)
 
                 # Draw clock face markers and hands
-                self.renderer.draw_analog_face(
-                    painter, self.width(), self.height(), self.radius_map
-                )
                 self.renderer.draw_analog_clock(
                     painter, self.local_time, self.width(),
                     self.height(), self.radius_map

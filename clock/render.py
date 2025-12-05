@@ -13,25 +13,6 @@ class ClockRenderer:
     def __init__(self):
         self.clock_60 = {i: i * 6 for i in range(60)}
 
-    def draw_analog_face(self, painter, width, height, radius_map):
-        """Draw the analog clock face with markers."""
-        painter.save()
-        h_width = width / 2
-        h_height = height / 2
-
-        for digit, angle in self.clock_60.items():
-            radius = 2
-            if digit % 15 == 0:
-                radius = 20
-            elif digit % 5 == 0:
-                radius = 8
-
-            pos = self._get_clock_position(digit, angle, h_width, h_height,
-                                           radius_map["digit"])
-            painter.drawEllipse(pos, radius, radius)
-
-        painter.restore()
-
     @staticmethod
     def draw_sword_hand(painter, color, angle, length, base_width,
                         tip_length, center_x, center_y):
