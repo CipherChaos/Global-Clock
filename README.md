@@ -10,13 +10,13 @@ A powerful global clock application that allows users to view the current time i
 - **Real-Time Updates:** Time is updated continuously for all selected time zones.
 - **Lightweight UI:** Simple and responsive user interface that adapts to any screen size.
 
-![Berlin](clock/assets/Berlin-sample.png)
+![Berlin](clock/assets/Berlin-sample.jpg)
 *Berlin Clock Style*
 
-![London](clock/assets/London-sample.png)
+![London](clock/assets/London-sample.jpg)
 *London Clock Style*
 
-![Paris](clock/assets/Paris-sample.png)
+![Paris](clock/assets/Paris-sample.jpg)
 *Paris Clock Style*
 
 ## Supported Cities
@@ -58,3 +58,63 @@ Run the project
 ``` bash
 python main.py
 ```
+##  Building Executables
+
+Build standalone executables using PyInstaller.
+
+### Windows
+
+Create GlobalClock.exe:
+
+``` bash
+pyinstaller --name GlobalClock --onefile --windowed -icon clock/medias/clock.ico --add-data "clock/assets;clock/assets" --add-data "clock/medias;clock/medias" main.py
+```
+
+Inside of `dist/` directory you can find GlobalClock.exe 
+
+### Linux
+
+Create Linux binary:
+
+``` bash
+pyinstaller --name GlobalClock --onefile --windowed -icon clock/medias/clock.svg --add-data "clock/assets;clock/assets" --add-data "clock/medias;clock/medias" main.py
+```
+
+Make executable:
+
+``` bash
+chmod +x dist/GlobalClock
+```
+
+#### Add to Linux Applications Menu (Optional):
+
+1- Create and open the desktop file 
+
+``` bash
+nano ~/.local/share/applications/globalclock.desktop
+```
+2- Copy the new `desktop` file configs based on your path
+
+``` bash
+[Desktop Entry]
+Type=Application
+Name=Global Clock
+Exec=/home/YOURUSER/.local/bin/GlobalClock
+Icon=/home/YOURUSER/path/to/icon.png
+Terminal=false
+Categories=Utility;
+
+```
+
+3- Make desktop file executable:
+
+``` bash
+chmod +x ~/.local/share/applications/globalclock.desktop
+```
+
+4- Copy binary to system path:
+
+``` bash
+sudo cp dist/GlobalClock /usr/local/bin/
+```
+
