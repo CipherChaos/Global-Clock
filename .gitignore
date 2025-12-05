@@ -1,0 +1,60 @@
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Byte-compiled / optimized / DLL files
+*.so
+*.dll
+*.dylib
+
+# IDE configs
+.idea/
+.vscode/
+*.code-workspace
+
+# PyInstaller output
+dist/
+build/
+*.spec
+
+# Logs and junk
+*.log
+*.tmp
+*.temp
+
+# OS-generated files
+.DS_Store
+Thumbs.db
+
+# Test cache
+.pytest_cache/
+.coverage
+htmlcov/
+
+# MyPy / type checking
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pycharm
+*.iml
+
+# Packaging
+*.egg-info/
+*.egg
+MANIFEST
+
+# Generated executable outputs
+*.exe
+*.bin
+
+# Env files
+.env
+.env.*
